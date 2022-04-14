@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+	--primary--color: #1d9bf0;
+	--secondary--color: #253341;
+	--success--color: #00cbb3;
+	--danger--color: #eb5757;
+	--dark--color: #15202b;
+	--gray--light--colo: #aab8c2;
+	--white--color: #f5f8fa;
+}
+
+body {
+	margin: 0;
+	font-family: 'Questrial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 0;
+}
+
+.nft {
+	background-color: var(--dark--color);
+	color: var(--white--color);
+}
