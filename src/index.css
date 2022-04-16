@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
 
 :root {
 	--primary--color: #1d9bf0;
@@ -6,19 +6,22 @@
 	--success--color: #00cbb3;
 	--danger--color: #eb5757;
 	--dark--color: #15202b;
-	--gray--light--colo: #aab8c2;
+	--gray--light--color: #aab8c2;
 	--white--color: #f5f8fa;
 }
 
 body {
 	margin: 0;
-	font-family: 'Questrial', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	padding: 0;
 }
 
 .nft {
+	min-height: 100vh;
 	background-color: var(--dark--color);
 	color: var(--white--color);
+	font-size: 1rem;
+	font-weight: 400;
 }

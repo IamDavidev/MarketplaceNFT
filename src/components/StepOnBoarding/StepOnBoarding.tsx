@@ -6,11 +6,15 @@ const StepOnBoarding = ({ title, image, step, next }: PropsStep) => {
 	console.log(step, next);
 	return (
 		<div className={styles.stepContain}>
-			<header className={styles.headerStep}>
-				<picture>
-					<img src={image} alt={title} loading='lazy' />
-				</picture>
-			</header>
+			<picture className={styles.pictureHeaderStep}>
+				<img
+					src={image}
+					alt={title}
+					loading='lazy'
+					className={styles.ImagePictureHeader}
+				/>
+			</picture>
+
 			<footer className={styles.footerStep}>
 				<div className={styles.containFooterStep}>
 					<p className={styles.titleFooterStep}>{title}</p>
@@ -18,14 +22,14 @@ const StepOnBoarding = ({ title, image, step, next }: PropsStep) => {
 						Buy and sell digital items
 					</span>
 					<div className={styles.stepFooterStep}>
-						<span></span>
-						<span></span>
-						<span></span>
+						<span className={step === 1 ? styles.stepActive : ''}></span>
+						<span className={step === 2 ? styles.stepActive : ''}></span>
+						<span className={step === 3 ? styles.stepActive : ''}></span>
 					</div>
 				</div>
 
 				<Link to={`/onboarding/${next}`} className={styles.btnNextStep}>
-					{next}
+					Next
 				</Link>
 			</footer>
 		</div>
