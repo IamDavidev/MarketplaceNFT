@@ -4,7 +4,7 @@
 	padding: 1.5rem;
 	.headerLoginStart {
 		height: 35vh;
-		picture {
+		div {
 			display: flex;
 			justify-content: flex-start;
 			gap: 0.5rem;
@@ -18,6 +18,7 @@
 				height: 250px;
 				border: 1px solid var(--primary--color);
 				border-radius: 50%;
+				z-index: 10;
 			}
 			&::after {
 				content: '';
@@ -58,7 +59,7 @@
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			a {
+			.linkConnect {
 				width: 100%;
 				background-color: var(--primary--color);
 				text-align: center;
@@ -79,6 +80,95 @@
 				justify-content: center;
 				align-items: center;
 			}
+		}
+	}
+}
+
+.loginConnect {
+	padding: 1.5rem;
+	.headerLoginConnect {
+		display: flex;
+		align-items: center;
+		.btnBackHeader {
+			transform: rotateY(180deg);
+			height: 20px;
+			width: 20px;
+		}
+		.titleHeaderConnect {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+			gap: 0.5rem;
+			span {
+				font-size: 1.3rem;
+				font-weight: bold;
+			}
+		}
+	}
+	.mainLoginConnect {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		.headerMainConnect {
+			div {
+				display: flex;
+				margin: 1rem auto;
+				img {
+					width: 207px;
+					height: 207px;
+					margin: auto;
+				}
+			}
+			.titleHeaderMain {
+				font-size: 36px;
+				font-weight: 900;
+				margin-bottom: 8px;
+			}
+			.textHeaderMain {
+				font-size: 17px;
+				font-weight: 400;
+				color: var(--gray--light--color);
+				span {
+					font-weight: bold;
+					color: var(--white--color);
+				}
+			}
+		}
+		.footerMainConnect {
+			display: flex;
+			gap: 12px;
+			flex-direction: column;
+			width: 100%;
+			.cardFooterConnect {
+				background-color: var(--secondary--color);
+				border-radius: 10px;
+				padding: 24px;
+				display: flex;
+				gap: 10px;
+				justify-content: flex-start;
+				align-items: center;
+				width: 100%;
+				box-sizing: border-box;
+				.imgCardConnect {
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+	.footerLoginConnect {
+		margin-top: 36px;
+		.btnLoginConnect {
+			width: 100%;
+			background-color: var(--primary--color);
+			text-align: center;
+			padding: 20px 24px;
+			border-radius: 10px;
+			text-decoration: none;
+			font-weight: 900;
+			color: var(--white--color);
 		}
 	}
 }

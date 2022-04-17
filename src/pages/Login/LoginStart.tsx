@@ -8,10 +8,10 @@ const LoginStart: FC = (): JSX.Element => {
 	return (
 		<div className={styles.loginStart}>
 			<header className={styles.headerLoginStart}>
-				<picture>
+				<div>
 					<img src={logoEnefte} alt='logo' />
 					<span>enefte</span>
-				</picture>
+				</div>
 			</header>
 			<section className={styles.mainLoginStart}>
 				<div
@@ -25,9 +25,13 @@ const LoginStart: FC = (): JSX.Element => {
 					</p>
 				</div>
 				<footer className={styles.footerMainLogin}>
-					<Link to='/login/connect'>Connect With Walllet</Link>
+					<Link to='/login/connect' className={styles.linkConnect}>
+						Connect With Walllet
+					</Link>
 					<span>
-						<img src={iconConnect} alt='connect' />
+						<Link to='/login/connect'>
+							<img src={iconConnect} alt='connect' />
+						</Link>
 					</span>
 				</footer>
 			</section>
